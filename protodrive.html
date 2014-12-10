@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Vincent Pacelli - Protodrive</title>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-xs-12">
+                    <a id="logo" href="index.html"><h1>Vincent Pacelli<br/><!--<small>I do stuff.</small>--></h1></a>
+                    <div><h3>Protodrive</h3></div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <div class="text-center">
+                        <img src="res/protodrive.png"></img>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-2">
+                    <h3>Description:</h3>
+                </div>
+                <div class="col-xs-8">
+                    <br/>
+                    <p>
+                    As the semester project for my Embedded Systems class, I worked on a hardware platform for testing the power control systems for electric vehicles. The project was suggested by the professor, Dr. Rahul Mangharam, as a more complicated version of a previous year's project.
+                    </p>
+                    <p>
+                    A conventional vehicle can waste large amounts of energy when a driver slows his vehicle by easing off the accelerator. The extra kinetic energy in the system simply dissipates into the environment. With an electrical motor, however, part of this energy can be recaptured by charging a super capacitor with the back EMF of the inductor in the motor in a process called regenerative breaking. Capacitors alone, however, cannot provide enough energy to power a vehicle for a long trip. Instead, they can be used to supplement a battery when high levels of current are needed to drive the motor, like when the vehicle is travelling up a steep hill. Instead of the battery taking the full current load, which can potentially damage it, the capacitor can provide some portion of the current to keep the current through the battery at a safe level.
+                    </p>
+                    <p>
+                    The Protodrive provides a hardware platform to test the control code for this type of hybrid power system. The device has two coupled motors. One represents the vehicle's motor, and the other represents the load present on that motor bythe terrain. A <a href="http://developer.mbed.org/platforms/mbed-LPC1768/">mBed</a> microcontroller serves as the hub of the system. A drive profile with speed and terrain info is sent via serial to the mBed from a computer, and the motors are then driven accordingly. A buck-boost converter provides both a method for drawing variable portions of current, and recharging the capacitor during regenerative breaking.                    
+                    </p>
+                    <p>
+                    For more information, our post-project write-up is available <a href="http://protodrive2.blogspot.com/">here</a>
+                    </p>
+               </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-xs-2">
+                    <h3>Skills Used:</h3>
+                </div>
+                <div class="col-xs-8">
+                    <br/>
+                    Embedded System Programming, C++, Amplifier and Power Circuit Design, MATLAB
+                </div>
+            </div>
+       </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

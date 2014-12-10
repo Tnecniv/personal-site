@@ -1,0 +1,2 @@
+# Module com.gambo.web.GamboWeb
+# RPC service class, partial path of RPC policy file

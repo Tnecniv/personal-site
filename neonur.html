@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Vincent Pacelli - NeoNur</title>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-xs-12">
+                    <a id="logo" href="index.html"><h1>Vincent Pacelli<br/><!--<small>I do stuff.</small>--></h1></a>
+                    <div><h3>NeoNur</h3></div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <div class="text-center">
+                        <img src="res/neonur.jpg" height="30%" width="50%"></img>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-2">
+                    <h3>Description:</h3>
+                </div>
+                <div class="col-xs-8">
+                    <br/>
+                    <p>
+                    As part of the 2014 SUNFEST REU, I worked with Dr. Jay Zemel on the NeoNur, which is a cheap, portable device for recording the feeding characteristics of infants.
+                    </p>
+                    <p>
+                    Devices to monitor various feeding characteristics of infants have existed for many years, but they were too large bulky to be used outside of a research setting. The NeoNur uses modern embedded systems technology to record the internal pressure sensor of the bottle during the feeding process. When the child bites down on the nipple of the bottle, the volume of the system decreases, which increases the internal pressure of the system. As fluid flows out of the bottle while the child is sucking, the internal pressure of the system decreases. The strength of these two actions corresponds proportionally with the magnitude of the measured pressure. Moreover, since biting and sucking normally occur one after the other, the resulting pressure vs. time graph is sinusoidal in nature. These two properties provide a wealth of information for medical researchers to analyze.
+                    </p>
+                    <p>
+                    I developed the companion software to the device. I developed a user interface for downloading and storing the data from the NeoNur's internal memory unit. I also prototyped a GUI suite for performing various DSP techniques in MATLAB and later implemented a more permanent version in C++ using <a src="http://qt-project.org/">Qt</a>.
+                    </p>
+                    <p>
+                    The NeoNur and my software is being used by roughly a dozen hospitals as a research tool.
+                    </p>
+               </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-xs-2">
+                    <h3>Skills Used:</h3>
+                </div>
+                <div class="col-xs-8">
+                    <br/>
+                    C, PIC microcontrollers, C++, C#, MATLAB, Signal Processing, Qt
+                </div>
+            </div>
+       </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

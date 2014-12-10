@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Vincent Pacelli - Smart Blox</title>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-xs-12">
+                    <a id="logo" href="index.html"><h1>Vincent Pacelli<br/><!--<small>I do stuff.</small>--></h1></a>
+                    <div><h3>Smart Blocx</h3></div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-2">
+                    <div class="text-center">
+                        <img src="res/smartblox.jpg" width="400px" height="400px"></img>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-xs-2">
+                    <h3>Description:</h3>
+                </div>
+                <div class="col-xs-8">
+                    <br/>
+                    <p>
+                    As part of Penn's <a href="http://www.xlab.upenn.edu">xLab</a>, I worked on developing the Smart Blox project, which are building blocks that are coupled with other media in your living room. The system would contain a base board that is in communication with a larger networked system. As blocks are placed on the board, the board maintains a digital representation of the structure in memory and can provide it to whatever device it is connected to, such as a video game.
+                    </p>
+                    <p>
+                    One goal of this project was to keep the cost of each block as low as possible. Moreover, in order for the device to work well, a solid electrical connection is needed, which means we needed to minimize the number of wires we were running to each block. Our solution was to place a <a href="http://www.adafruit.com/product/1551">DS2413</a> in each block. These devices follow the <a href="http://en.wikipedia.org/wiki/1-Wire">1-Wire</a> protocol, The base board can keep track of the number of blocks on each node and extrapolate the structure from there. Moreover, the GPIO on the chips allows for switches and LEDs to be embedded in the devices to provide limited interaction with individual blocks.
+                    </p>
+               </div>
+            </div>
+            <hr/>
+            <div class="row">
+                <div class="col-xs-2">
+                    <h3>Skills Used:</h3>
+                </div>
+                <div class="col-xs-8">
+                    <br/>
+                    C/C++, Product Design, Embedded Programming
+                </div>
+            </div>
+       </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
