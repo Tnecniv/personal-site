@@ -41,11 +41,14 @@
                 <div class="col-md-8">
                     <br/>
                     <p>
-                    As part of Penn's <a href="http://www.xlab.upenn.edu">xLab</a>, I worked on developing the Smart Blox project, which are building blocks that are coupled with other media in your living room. The system would contain a base board that is in communication with a larger networked system. As blocks are placed on the board, the board maintains a digital representation of the structure in memory and can provide it to whatever device it is connected to, such as a video game.
+                    As part of Penn's <a href="http://www.xlab.upenn.edu">xLab</a>, I worked on developing Smart Blox, which are building blocks that are coupled with other media in your living room. The system contains a base board that is in communication with a larger living room system network. As blocks are placed on the board, the board maintains a digital representation of the structure in memory and can provide it to whatever device it is connected to, such as a video game playing on a television.
                     </p>
                     <p>
-                    One goal of this project was to keep the cost of each block as low as possible. Moreover, in order for the device to work well, a solid electrical connection is needed, which means we needed to minimize the number of wires we were running to each block. Our solution was to place a <a href="http://www.adafruit.com/product/1551">DS2413</a> in each block. These devices follow the <a href="http://en.wikipedia.org/wiki/1-Wire">1-Wire</a> protocol, The base board can keep track of the number of blocks on each node and extrapolate the structure from there. Moreover, the GPIO on the chips allows for switches and LEDs to be embedded in the devices to provide limited interaction with individual blocks.
+                    One constraint of this project was to keep the cost of each block as low as possible. Moreover, in order for the device to work well, a solid electrical connection between blocks is needed. Too much bouncing would produce a mediocre user experience if it caused a block to not be recognized properly. We elected to minimize the number contacts needed on the blocks so that the area of each contact could remain large. Our solution was to place a <a href="http://www.adafruit.com/product/1551">DS2413</a> in each block. These devices follow the <a href="http://en.wikipedia.org/wiki/1-Wire">1-Wire</a> protocol. They each have a unique ID, which allows us to keep track of how blocks move and when a new block enters the system. Moreover, the GPIO on the chips allows for switches and LEDs to be embedded in the devices to provide limited interaction with individual blocks.
                     </p>
+		    <p>
+		    Demo video forthcoming
+		    </p>
                </div>
             </div>
             <hr/>
