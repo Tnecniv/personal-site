@@ -48,7 +48,7 @@
                     We thought it would be fun to build an emulator as means of learning more about computer architecture. We selected the Game Boy because the platform had enough complexity to be interesting while remaining understandable. The Game Boy is based around a modified version of a Zilog Z80, and the system hardware is <a href=http://problemkaputt.de/pandocs.htm">very well documented</a>.
                     </p>
                     <p>
-                    We wrote the program in Java with the intention of porting it to Android. Much of our code was written with multiple target platforms in mind. We split the codebase into a set of core emulation classes and classes that revolved around platform specific functionality like rendering and input. We later discovered that Java was too slow to run the emulator well on Android. Existing Android Game Boy emulators are mostly written in C using the JNI. However, we were able to use Google Web Toolkit to create a web version (above) with very little additional code due to our modular design.
+                    We wrote the program in Java with the intention of porting it to Android. Much of our code was written with multiple target platforms in mind and we decoupled anything that was platform specific from the emulation logic. We later discovered that Java was too slow to run the emulator well on Android. It turned out that most of the existing emulators at the time were mainly written in C/C++ with an Android Java wrapper for better performance. However, as a testimate to our architecture, we were able to use Google Web Toolkit to create a web version (above) with very little additional code due to our modular design.
                     </p>
                     <p>
                     Our code is available on <a href="https://github.com/osnr/gambo">GitHub</a>.
@@ -56,16 +56,16 @@
                 </div>
             </div>
             <hr/>
-            <div class="row">
+<!--            <div class="row">
                 <div class="col-md-2">
-                    <h3>Skills Used:</h3>
+                   <h3>Skills Used:</h3>
                 </div>
                 <div class="col-md-8">
                     <br/>
                     Java, Assembly, Software Architecture
                 </div>
             </div>
-       </div>
+        </div> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     </body>
