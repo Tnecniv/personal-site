@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        <title>Vincent Pacelli - NeoNur</title>
+        <title>Vincent Pacelli - Traycer</title>
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,7 +20,7 @@
             <div class="row" id="header">
                 <div class="col-md-12">
                     <a id="logo" href="index.html"><h1>Vincent Pacelli<br/></h1></a>
-                    <div><h3>NeoNur</h3></div>
+                    <div><h3>Protodrive</h3></div>
                 </div>
             </div>
             <div class="row">
@@ -29,7 +29,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="text-center">
-                        <img src="res/neonur.jpg" height="30%" width="50%"></img>
+                        <img src="res/traycer.png" width="40%"></img>
                     </div>
                 </div>
             </div>
@@ -41,16 +41,13 @@
                 <div class="col-md-8">
                     <br/>
                     <p>
-                    As part of the 2014 SUNFEST REU, I worked with Dr. Jay Zemel on the NeoNur, which is a cheap, portable device for recording the feeding characteristics of infants.
+                        I wanted to get some more experience working with Haskell, so I challenged myself to a Christmas hackathon and wrote a <a href="https://en.wikipedia.org/wiki/Ray_tracing_(graphics)">raytracer</a>. A raytracer is a good project for working with a new language because it is complicated enough that you can fully explore a language's features without being too big of a commitment. It features full Phong shading with reflective surfaces and hard shadows.
                     </p>
                     <p>
-                    Devices to monitor various feeding characteristics of infants have existed for many years, but they were not portable and difficult to use outside of research lab. The NeoNur uses modern embedded systems technology to record the internal pressure sensor of the bottle during the feeding process. When the child bites down on the nipple of the bottle, the volume of the system decreases, which increases the internal pressure of the system. As fluid flows out of the bottle while the child is sucking, the internal pressure of the system decreases. The strength of these two actions corresponds proportionally with the magnitude of the measured pressure. Moreover, since biting and sucking normally occur one after the other, the resulting pressure signal is sinusoidal in nature. These two properties provide a wealth of information for medical researchers to analyze.
+                        Working with Haskell turned out to be quite delightful for this project. Previously, I was aware of the praise the Haskell type system received and the "if it compiles, it works" slogan that gets tossed around, but I remained skeptical. In my experience, most bugs are logical in nature, not a typing issue. However, after spending some time with Haskell, I realized that the beauty of the type system is that your data structures <em>express the logic of the problem you are trying to solve</em>. While it doesn't prevent every bug, the type system allows for a certain clarity of thought and a strictness that helps ensure the code you write adheres to your intentions.
                     </p>
                     <p>
-                    I developed the companion software to the device, which included a user interface for downloading and storing the data from the NeoNur's internal memory unit and a GUI suite for performing analysis of the recorded data with various DSP techniques. I also worked with the embedded software onboard the device, though to a lesser extent.
-                    </p>
-                    <p>
-                    The NeoNur and my software is being used by roughly a dozen hospitals as a research tool.
+                        Code is availbe on <a href="https://github.com/Tnecniv/traycer">GitHub</a>.
                     </p>
                </div>
             </div>
@@ -61,7 +58,7 @@
                 </div>
                 <div class="col-md-8">
                     <br/>
-                    C, PIC microcontrollers, C++, C#, MATLAB, Signal Processing, Qt
+                    Embedded System Programming, C++, Amplifier and Power Circuit Design, MATLAB
                 </div>
             </div>
         </div> -->

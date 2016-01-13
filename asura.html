@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <title>Vincent Pacelli - ASURA</title>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="row" id="header">
+                <div class="col-md-12">
+                    <a id="logo" href="index.html"><h1>Vincent Pacelli<br/></h1></a>
+                    <div><h3>Asura</h3></div>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="text-center">
+                        <img src="res/asura.jpg" width="50%" height="50%"></img>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-2">
+                    <h3>Description:</h3>
+                </div>
+                <div class="col-md-8">
+                    <br/>
+                    <p>For our senior design project, my group and I are developing a multi-agent UAV system for search and rescue teams. Many of the design concepts will be able to support multiple types of vehicles and sensors, but emphasis will primarily be on UAVs outfitted with thermal cameras. Our focus during the first semester was primarily designing the architecture of the system and integrating the different hardware and software components. Next semester we will then be able to focus on more interesting features, such as path planning for different agents and algorithms for processing the thermal data.</p>
+
+                    <p>I am very excited to begin working on the planning module, where I intend to use a synthesis approach to generate agent control policies. Recent <a href="http://web.stanford.edu/~schwager/MyPapers/LeahyEtAlISER14QuadPersistentSurveillance.pdf">research</a> sugguests that this is a good approach for generating safe motion plans to persistently monitor different areas of interest with timing constraints. Such a feature is desirable if a search team wants to scan particular regions on a fixed interval. Traditionally, plotting these flight plans requires careful human orchestration to meet timing, fuel, and safety requirements. However, levaraging synthesis techniques, we can generate a control policy that is both safe and correct with significantly less human input. The user will only need to mark areas of interest on the map and annotate them with timing requirements that are then converted into a <em>bounded linear temporal logic</em> specification. From this information and other parameters, such as no-fly zones, charging areas, vehicle speeds and range, we can create a sensible discrete approximation of the system represented as an automaton. Using this abstraction, we can use modern formal methods tools to generate correct plans in the discrete setting, and control techniques to realize them in the real world.</p>
+               </div>
+            </div>
+            <hr/>
+<!--            <div class="row">
+                <div class="col-md-2">
+                    <h3>Skills Used:</h3>
+                </div>
+                <div class="col-md-8">
+                    <br/>
+                    Embedded System Programming, C++, Amplifier and Power Circuit Design, MATLAB
+                </div>
+            </div>
+        </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
