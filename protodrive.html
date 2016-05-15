@@ -29,25 +29,27 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="text-center">
+                      <figure>
                         <img src="res/protodrive.png"></img>
+                        <figcaption>An overview of the protodrive system</figcaption>
+                      </figure>
                     </div>
                 </div>
             </div>
             <br/>
             <div class="row">
                 <div class="col-md-2">
-                    <h3>Description:</h3>
                 </div>
                 <div class="col-md-8">
                     <br/>
                     <p>
-                    As my Embedded Systems semester project, I worked on a hardware platform for testing the power control systems for electric vehicles. The project was a remake of a device created by a previous group, but ours featured more nuanced power control features.
+                    As my embedded systems class semester project, I worked on a hardware platform for testing the power control systems for electric vehicles. The project was a remake of a device created by a previous group, but ours featured more nuanced power control features.
                     </p>
                     <p>
-                    A conventional vehicle wastes large amounts of energy when a driver slows his vehicle by easing off the accelerator. The extra kinetic energy in the system dissipates into the environment as the car decelerates. However, an electric vehicle is capable of recapturing a large part of this energy through a process called regenerative braking &emdash; the charging of a capacitive element via the back EMF recaptured from the electric motor. However, capacitors alone cannot provide enough energy to power a vehicle for a long trip. Instead, they are often used to supplement a battery when high levels of current are needed to drive the motor, like when the vehicle is travelling up a steep hill. Instead of the battery delivering the full potentially damaging current load, the capacitor can provide some portion of the current to keep the current through the battery at a safe level. Such energy systems are typically called <em>hybrid drive</em>.
+                    A conventional vehicle wastes large amounts of energy when a driver slows his vehicle by easing off the accelerator. The extra kinetic energy in the system dissipates into the environment as the car decelerates. However, an electric vehicle is capable of recapturing a large part of this energy through a process called <em>regenerative braking</em> &mdash; the charging of a capacitive element via the back EMF recaptured from the electric motor. However, capacitors alone cannot provide enough energy to power a vehicle for a long trip. Instead, they are often used to supplement a battery when high levels of current are needed to drive the motor, like when the vehicle is travelling up a steep hill. Instead of the battery delivering the full potentially damaging current load, the capacitor can provide some portion of the current to keep the current through the battery at a safe level. Such energy systems are typically called <em>hybrid drive</em>.
                     </p>
                     <p>
-                    The Protodrive provides a scaled hardware-in-the-loop test platform for hybrid drive systems. The system contains two coupled motors &emdash; one serves as the electric vehicle motor while the other serves as a controllable load on the motor. An <a href="http://developer.mbed.org/platforms/mbed-LPC1768/">mBed</a> microcontroller serves as the control hub of the system. A drive profile with speed and terrain information is sent uploaded to the mBed from a computer, which specifies the control policies for each motor. Using a buck-boost converter, the microcontroller is also capable of controlling the rate of discharge of the capacitor &emdash; a key feature lacking from the previous version. Data on the voltage of the battery and capacitor is reported in real time.                    
+                    The Protodrive provides a scaled hardware-in-the-loop test platform for hybrid drive systems. The system contains two coupled motors &mdash; one serves as the electric vehicle motor while the other serves as a controllable load on the motor. An <a href="http://developer.mbed.org/platforms/mbed-LPC1768/">mBed</a> microcontroller serves as the control hub of the system. A drive profile with speed and terrain information is sent uploaded to the mBed from a computer, which specifies the control policies for each motor. Using a buck-boost converter, the microcontroller is also capable of controlling the rate of discharge of the capacitor &mdash; a key feature lacking from the previous version. Data on the voltage of the battery and capacitor is reported in real time.
                     </p>
                     <p>
                     For more information, our post-project write-up is available <a href="http://protodrive2.blogspot.com/">here</a>

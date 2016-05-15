@@ -29,20 +29,29 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="text-center">
-                        <img src="res/asura.jpg" width="50%" height="50%"></img>
+                      <figure>
+                        <img src="res/goodtrack.gif" width="40%" height="40%"></img>
+                        <figcaption>An example of the human detection and tracking algorithm in action.</figcaption>
+                      </figure>
                     </div>
                 </div>
             </div>
             <br/>
             <div class="row">
                 <div class="col-md-2">
-                    <h3>Description:</h3>
+                    <!-- <h3>Description:</h3> -->
                 </div>
                 <div class="col-md-8">
-                    <br/>
-                    <p>For our senior design project, my group and I are developing a multi-agent UAV system for search and rescue teams. Many of the design concepts will be able to support multiple types of vehicles and sensors, but emphasis will primarily be on UAVs outfitted with thermal cameras. Our focus during the first semester was primarily designing the architecture of the system and integrating the different hardware and software components. Next semester we will then be able to focus on more interesting features, such as path planning for different agents and algorithms for processing the thermal data.</p>
+                    <p>
+                      For my senior design project, my group and I developed a UAV system for search and rescue teams. For our work, we received the <strong>Honorable Harold Berger Award</strong> from the Electrical and Systems Engineering department and placed sixth out of eighteen interdepartmental finalists (honorable mention). We designed our system to be easy to extend with additional sensors, different vehicles, and multiple agents. One of my primary contributions to the project was the person detection and tracking algorithm demonstrated in the figure, which I wrote in Python using OpenCV based on this <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=1545530&tag=1" >paper</a>.
+                    </p>
 
-                    <p>I am very excited to begin working on the planning module, where I intend to use a synthesis approach to generate agent control policies. Recent <a href="http://web.stanford.edu/~schwager/MyPapers/LeahyEtAlISER14QuadPersistentSurveillance.pdf">research</a> sugguests that this is a good approach for generating safe motion plans to persistently monitor different areas of interest with timing constraints. Such a feature is desirable if a search team wants to scan particular regions on a fixed interval. Traditionally, plotting these flight plans requires careful human orchestration to meet timing, fuel, and safety requirements. However, levaraging synthesis techniques, we can generate a control policy that is both safe and correct with significantly less human input. The user will only need to mark areas of interest on the map and annotate them with timing requirements that are then converted into a <em>bounded linear temporal logic</em> specification. From this information and other parameters, such as no-fly zones, charging areas, vehicle speeds and range, we can create a sensible discrete approximation of the system represented as an automaton. Using this abstraction, we can use modern formal methods tools to generate correct plans in the discrete setting, and control techniques to realize them in the real world.</p>
+                    <p>
+                      At the heart of the detection / tracking algorithm is a <em><a href="http://arxiv.org/pdf/1301.0607.pdf">particle filter</a></em> &mdash; a Bayesian algorithm often used to identify the state of a system give some observed output, a heuristic for evaluating how good a particular state  and a noisy process model. In this case, the particles are objects called <em>silhouettes</em>, or pairs of ellipses arranged to fit the outline of a human (shown in figure). In order to evaluate whether or not a silhouette is well fit to a human, the image gradient along the ellipses is summed. The particle filter maintains a bank of silhouettes, and with each new frame, the silhouettes are updated and scored. Low scoring silhouettes are regenerated to keep the "genetic diversity" of the system high while high scoring particles signify objects that are likely human.
+                    </p>
+                    <p>
+                      Unfortunately, the semester concluded before I finished my goals for the detection system. I intended to integrate the IMU data to compensate for the egomotion of the vehicle.
+                    </p>
                </div>
             </div>
             <hr/>
